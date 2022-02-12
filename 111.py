@@ -1,12 +1,12 @@
 def bubble(array, index):#сортировка пузырьком
     if index % 2 == 0:
-        for i in range(len(array)):
+        for i in range(len(array)-1):
             for j in range(len(array)-i-1):
                 if array[j] > array[j+1]:
                     new = array[j]
                     array[j], array[j+1] = array[j+1], new
     else:
-        for i in range(len(array)):
+        for i in range(len(array)-1):
             for j in range(len(array)-i-1):
                 if array[j] < array[j+1]:
                     new = array[j]
