@@ -23,7 +23,7 @@ def sortarray(n):
             arrays[i].append(random.randint(1, 100))
     for i in range(len(arrays)):#цикл для вызова функции bubble
         arrays[i] = bubble(arrays[i], i)
-    print(arrays)
+    return(arrays)
 import random            
 print('Введите количество массивов')
 sortarray(int(input()))
