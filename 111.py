@@ -14,7 +14,7 @@ def bubble(array, index):#сортировка пузырьком
     return array
 def sortarray(n):
     arrays = []
-    length = [i for i in range(1, 101)]#массив из различных длин для массивов 
+    length = [i for i in range(1, n+2)]#массив из различных длин для массивов 
     random.shuffle(length)
     for _ in range(n):#создание n массивов в массиве
         arrays.append([])
